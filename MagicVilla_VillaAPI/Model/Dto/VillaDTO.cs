@@ -9,5 +9,7 @@ namespace MagicVilla_VillaAPI.Model.Dto
         [Required] //Data Annotation  for Name
         [MaxLength(200)] // Data Annotation for Name
         public string Name { get; set; }
+        public int Occupancy { get; set; }
+        public int Sqft { get; set; }
     }
 }
