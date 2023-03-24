@@ -1,5 +1,5 @@
 //using Serilog;
-using MagicVilla_VillaAPI.Logging;
+//using MagicVilla_VillaAPI.Logging;
 
 
 var builder = WebApplication.CreateBuilder(args);
