@@ -23,10 +23,10 @@ namespace MagicVilla_VillaAPI.Controllers
         //}
         //Logger upper part
 
-        private readonly Ilogging _logger;
-        public VillaAPIController(Ilogging logger) 
+       // private readonly Ilogging _logger;
+        public VillaAPIController() 
         {
-            _logger= logger;
+           // _logger= logger;
         }
 
         [HttpGet] //Http Type EndPoint not Expect any parameter
@@ -41,7 +41,7 @@ namespace MagicVilla_VillaAPI.Controllers
 
 
             //Set Logging something
-            _logger.Log("Getting all villas", "");
+           // _logger.Log("Getting all villas", "");
             //Set Logging
 
              return Ok(VillaStore.VillaList);
@@ -57,7 +57,7 @@ namespace MagicVilla_VillaAPI.Controllers
         {
             if (id == 0)
             {
-                _logger.Log("Get Villa Error with Id " + id, "Error");
+               // _logger.Log("Get Villa Error with Id " + id, "Error");
                 return BadRequest();
             }
             //Using LINQ Operation
